@@ -13,6 +13,7 @@ import { CommandStore } from './structures/stores/CommandStore';
 import { ListenerStore } from './structures/stores/ListenerStore';
 import { PreconditionStore } from './structures/stores/PreconditionStore';
 
+
 export type Prefix = string | string[];
 
 export interface PrefixHook {

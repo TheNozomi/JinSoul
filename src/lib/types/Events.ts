@@ -1,5 +1,6 @@
 import type { Piece } from '@sapphire/pieces';
 import {
+  type ClientSession,
   type Message,
   Events as WAEvents
 } from 'whatsapp-web.js';
@@ -95,6 +96,7 @@ export interface CommandSuccessPayload<T extends Args = Args> extends CommandRun
 
 export interface CommandTypingErrorPayload<T extends Args = Args> extends CommandRunPayload<T> {}
 export interface ClientEvents {
+  authenticated: [session: ClientSession];
   message_create: [message: Message];
   qr: [qr: string];
   ready: [];
