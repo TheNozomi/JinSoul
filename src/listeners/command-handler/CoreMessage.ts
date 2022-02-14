@@ -9,8 +9,8 @@ export class CoreListener extends Listener<typeof Events.MessageCreate> {
 	}
 
 	public run(message: Message) {
-		// Don't run commands if the message is from the bot
-		if (message.fromMe) return;
+		// Don't run commands if it's not a chat message or if the message is from the bot
+		if (message.type !== 'chat' || message.fromMe) return;
 
 		// Run the message parser.
 		this.container.client.emit(Events.PreMessageParsed, message);
