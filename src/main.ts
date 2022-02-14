@@ -2,7 +2,9 @@ import { env } from './lib/environment';
 import { JinSoulClient } from './lib/JinSoulClient';
 
 (async () => {
-  const client = new JinSoulClient({});
+  const client = new JinSoulClient({
+    defaultPrefix: '!'
+  });
   console.log('Environment:', env);
 
   await client.login();
