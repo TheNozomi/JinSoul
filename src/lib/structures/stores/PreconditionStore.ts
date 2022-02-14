@@ -1,6 +1,6 @@
 import { Store } from '@sapphire/pieces';
 import type { Message } from 'whatsapp-web.js';
-import { ok } from '../../parsers/Result';
+import { ok } from '@sapphire/result';
 import type { Command } from '../Command';
 import { AsyncPreconditionResult, Precondition, PreconditionContext } from '../Precondition';
 

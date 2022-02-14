@@ -29,7 +29,6 @@
 
 		/* Other settings */
 		"esModuleInterop": true,
-		"exactOptionalPropertyTypes": true,
 		"experimentalDecorators": true,
 		"forceConsistentCasingInFileNames": true
 	}

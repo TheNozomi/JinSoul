@@ -1,5 +1,5 @@
 import type { PieceContext } from '@sapphire/pieces';
-import { fromAsync, isErr } from '../../lib/parsers/Result';
+import { fromAsync, isErr } from '@sapphire/result';
 import { Listener } from '../../lib/structures/Listener';
 import { CommandAcceptedPayload, Events } from '../../lib/types/Events';
 

@@ -3,7 +3,7 @@ import type { Awaitable } from '@sapphire/utilities';
 import type { Message } from 'whatsapp-web.js';
 import { PreconditionError } from '../errors/PreconditionError';
 import type { UserError } from '../errors/UserError';
-import { err, ok, Result } from '../parsers/Result';
+import { err, ok, Result } from '@sapphire/result';
 import type { Command } from './Command';
 
 export type PreconditionResult = Awaitable<Result<unknown, UserError>>;

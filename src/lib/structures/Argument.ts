@@ -4,7 +4,7 @@ import type { Message } from 'whatsapp-web.js';
 import type { ArgumentError } from '../errors/ArgumentError';
 import type { UserError } from '../errors/UserError';
 import { Args } from '../parsers/Args';
-import type { Result } from '../parsers/Result';
+import type { Result } from '@sapphire/result';
 import type { Command } from './Command';
 
 /**
