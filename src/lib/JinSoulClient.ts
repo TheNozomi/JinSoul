@@ -128,7 +128,7 @@ export class JinSoulClient extends Client {
 
     this.stores
       .register(new ArgumentStore().registerPath(join(__dirname, '..', 'arguments')))
-      .register(new CommandStore())
+      .register(new CommandStore().registerPath(join(__dirname, '..', 'commands')))
       .register(new ListenerStore().registerPath(join(__dirname, '..', 'listeners')))
       .register(new PreconditionStore().registerPath(join(__dirname, '..', 'preconditions')));
   }

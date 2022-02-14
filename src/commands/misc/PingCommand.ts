@@ -4,7 +4,7 @@ import type { Message } from 'whatsapp-web.js';
 export class PingCommand extends Command {
 	public constructor(context: Command.Context) {
 		super(context, {
-      aliases: ['ping']
+      aliases: ['ping', 'pong']
     });
 	}
 
